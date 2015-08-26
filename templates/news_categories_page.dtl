@@ -80,7 +80,7 @@
             <a href="/p/Money?page=1"><span>Money</span></a>
           {% endifequal %}
           {%  ifequal category "Markets" %}
-            <a href="/World?page=1"><span>World News</span></a>
+            <a href="/p/World?page=1"><span>World News</span></a>
             <a href="/p/US?page=1"><span>US</span></a>
             <a href="/p/Politics?page=1" ><span>Politics</span></a>
             <a href="/p/Entertainment?page=1"><span>Entertainment</span></a>
@@ -88,7 +88,7 @@
             <a href="/p/Money?page=1"><span>Money</span></a>
           {% endifequal %}
           {%  ifequal category "Money" %}
-            <a href="/World?page=1"><span>World News</span></a>
+            <a href="/p/World?page=1"><span>World News</span></a>
             <a href="/p/US?page=1"><span>US</span></a>
             <a href="/p/Politics?page=1" ><span>Politics</span></a>
             <a href="/p/Entertainment?page=1"><span>Entertainment</span></a>
@@ -156,7 +156,7 @@
               <div class="row videorow">
                 <span class="gallerythumb gallery_thumb">
                   <a href="/v/{{ lvid.id }}">
-                    <img src="http://img1.contentapi.ws/{{ lvid.thumb_image }}"/>
+                    <img src="http://newscdn.lycos.com/world_news/{{ lvid.thumb_image }}"/>
                     <img class="smallplay" src="/images/play-icon.png">
                     <p class="duration small ng-binding">{{lvid.duration}} s</p>
                   </a>
@@ -182,7 +182,7 @@
               {% for n in popularnews %}
               <div class="row" ng-repeat="n in topNewsAndGraphics">
                 <div class="news-item">
-                  <img class="news-graphic" src="http://img1.contentapi.ws/{{ n.thumb_image }}"/>
+                  <img class="news-graphic" src="http://newscdn.lycos.com/{{ n.thumb_image }}"/>
                   <p>{{ n.title }}</p><span class="uploaded-date">{{ n.upload_date }}</span>
                 </div>
               </div>

@@ -80,7 +80,7 @@
                 <div class="width50">
                   <span class="gallerythumb">
                     <a href="/v/{{ lvid.id }}">
-                      <img src="http://img1.contentapi.ws/{{lvid.thumb_image}}"/>
+                      <img src="http://newscdn.lycos.com/world_news/{{lvid.thumb_image}}"/>
                       <img class="play" src="/images/play-icon.png" />
                       <p class="duration small ng-binding">{{lvid.duration}} s</p>
                     </a>
@@ -113,7 +113,7 @@
               <div class="row videorow">
                 <span class="gallerythumb gallery_thumb">
                   <a href="/v/{{ lvid.id }}">
-                    <img src="http://img1.contentapi.ws/{{ lvid.thumb_image }}"/>
+                    <img src="http://newscdn.lycos.com/world_news/{{ lvid.thumb_image }}"/>
                     <img class="smallplay" src="/images/play-icon.png">
                     <p class="duration small ng-binding">{{lvid.duration}} s</p>
                   </a>
@@ -140,7 +140,7 @@
               {% for n in popularnews %}
                 <div class="row">
                   <div class="news-item">
-                    <img class="news-graphic" src="http://img1.contentapi.ws/{{ n.thumb_image }}"/>
+                    <img class="news-graphic" src="http://newscdn.lycos.com/{{ n.thumb_image }}"/>
                     <p>{{ n.title }}</p><span class="uploaded-date">{{ n.upload_date }}
                   </div>
                 </div>
